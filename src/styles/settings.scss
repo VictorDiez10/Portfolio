@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Mauline';
+    src: url('/fonts/Mauline.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin titre {
+    font: {
+        family: "Mauline";
+    };
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/roboto-black.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin text {
+    font: {
+        family: 'Roboto';
+    };
+}
+
+$primaryColor : #495867;
+$secondColor : #577399;
+$thirdColor : #BDD5EA;
+$fourthColor : #F7F7FF;
+$fifthColor : #FE5F55;
