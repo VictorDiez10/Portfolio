@@ -1,0 +1,21 @@
+@import './settings.scss';
+
+// #about {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+h2 {
+    display: flex;
+    justify-content: center;
+    color: $secondColor;
+    font-size: 2.5em;
+}
+
+.about p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.25em;
+    color: $primaryColor
+}

@@ -1,8 +1,9 @@
-import '../styles/reset.scss'
-import Error from '../page/Error'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Portfolio from '../page/Portfolio'
-import '../styles/app.scss'
+import '../styles/reset.scss';
+import Error from '../page/Error';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Portfolio from '../page/Portfolio';
+import '../styles/app.scss';
+import '../styles/settings.scss';
 
 function App() {
 

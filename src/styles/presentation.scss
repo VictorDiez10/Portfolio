@@ -1,0 +1,13 @@
+@import "./settings.scss";
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $secondColor;
+    height: 500px;
+    h1 {
+        font-weight: 500;
+        font-size: 2.5em;
+    }
+}

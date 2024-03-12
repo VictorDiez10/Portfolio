@@ -1,0 +1,14 @@
+@import './settings.scss';
+
+// #services {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+
+.services p {
+    color: $primaryColor;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,31 @@
+@import "./settings.scss";
+
+.header {
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-top: 0.3em;
+}
+
+.sous-header {
+    display: flex;
+    justify-content: space-between;
+    .logo-victor {
+        width: 70px;
+    }
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        a:hover{
+            color: $fifthColor;
+        }
+        .link {
+            margin-right: 30px;
+            text-decoration: none;
+        }
+    }
+}

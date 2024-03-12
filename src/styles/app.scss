@@ -1,10 +1,5 @@
 @import "./settings.scss";
 
-h1 {
-    @include titre;
-    color: $primaryColor;
-}
-
-div {
-    @include text;
+body {
+    background-color: $fourthColor;
 }

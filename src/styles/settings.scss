@@ -1,31 +1,38 @@
+// Mise en place des fonts 
+
 @font-face {
     font-family: 'Mauline';
-    src: url('/fonts/Mauline.ttf');
+    src: url('./../fonts/mauline.woff');
     font-weight: normal;
     font-style: normal;
 }
 
-@mixin titre {
-    font: {
-        family: "Mauline";
-    };
+h1, h2, h3 {
+    font-family: 'Mauline', 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
 }
+
 
 @font-face {
     font-family: 'Roboto';
-    src: url('/fonts/roboto-black.ttf');
+    src: url('./../fonts/roboto-black.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
-@mixin text {
-    font: {
-        family: 'Roboto';
-    };
-}
+
+//Mise en place des couleurs
 
 $primaryColor : #495867;
 $secondColor : #577399;
 $thirdColor : #BDD5EA;
 $fourthColor : #F7F7FF;
 $fifthColor : #FE5F55;
+
+section p, a {
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    color: $primaryColor;
+    font-size: 1.25em;
+}
