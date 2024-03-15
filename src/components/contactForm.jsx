@@ -37,9 +37,9 @@ function ContactForm() {
         </form>
     );
 }
-function App() {
+function BJR() {
     return (
         <ContactForm />
     );
 }
-export default App;
+export default BJR;

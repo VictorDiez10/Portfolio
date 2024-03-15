@@ -1,11 +1,12 @@
-import '../styles/contact.scss'
+import '../styles/contact.scss';
+import BJR from '../components/contactForm';
 
 export default function Contact() {
     return (
         <section id="contact">
             <h2>Me Contacter</h2>
             <div className='contacter'>
-                <p>Form avec les différentes cases pour m'envoyer un mail</p>
+                <BJR/>
             </div>
         </section>
     )

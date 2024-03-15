@@ -1,21 +1,32 @@
 @import './settings.scss';
 
-// #about {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-
-h2 {
-    display: flex;
-    justify-content: center;
-    color: $secondColor;
-    font-size: 2.5em;
+#about {
+    margin-top: 30px;
+    
+    background-color: $thirdColor;
+    h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 2.5em;
+        margin-top: 30px;
+        text-decoration: underline $primaryColor;
+    }
 }
 
-.about p {
+.border-section {
+    border-top: 3px solid $fifthColor;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.about {
+    padding-bottom: 30px;
+p {
+    margin-top: 30px;
     display: flex;
     justify-content: center;
+    text-align: center;
     font-size: 1.25em;
-    color: $primaryColor
+    color: $primaryColor;
+}
 }

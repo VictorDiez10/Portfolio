@@ -4,10 +4,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $secondColor;
-    height: 500px;
+    color: $thirdColor;
+    height: 763px;
+    background-image: url("../assets/images/original.jpg");
+    background-size: cover;
+
+    // picture {
+    //     position: absolute;
+    //     min-width: 100%;
+    //     min-height: 100%;
+    //     top: 50%;
+    //     left: 50%;
+    //     z-index: -100;
+    //     transform: translate(-50%, -50%);
+    // }
     h1 {
         font-weight: 500;
         font-size: 2.5em;
+        color: $thirdColor;
     }
 }

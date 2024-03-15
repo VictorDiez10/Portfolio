@@ -7,13 +7,6 @@
     font-style: normal;
 }
 
-h1, h2, h3 {
-    font-family: 'Mauline', 'Courier New', Courier, monospace;
-    display: flex;
-    justify-content: center;
-    font-size: 2.5em;
-}
-
 
 @font-face {
     font-family: 'Roboto';
@@ -35,4 +28,12 @@ section p, a {
     font-family: 'Roboto', 'Courier New', Courier, monospace;
     color: $primaryColor;
     font-size: 1.25em;
+}
+
+h1, h2 {
+    font-family: 'Mauline', 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    color: $secondColor;
 }

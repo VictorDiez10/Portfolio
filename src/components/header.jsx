@@ -1,4 +1,4 @@
-import PC from "../assets/capture.jpeg";
+import PC from "../assets/logo/Logo-pc-cercle.png";
 import "../styles/header.scss";
 
 

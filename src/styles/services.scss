@@ -1,14 +1,18 @@
 @import './settings.scss';
 
-// #services {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
+#services {
+    margin-top: 30px;
+}
 
 
 .services p {
     color: $primaryColor;
     display: flex;
     justify-content: center;
+}
+
+.border-section {
+    border-top: 3px solid $fifthColor;
+    margin-left: 40%;
+    margin-right: 40%;
 }
