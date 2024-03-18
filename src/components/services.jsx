@@ -11,7 +11,7 @@ export default function Services() {
             <h2>Mes Services</h2>
             <div className='services'>
                 {data.map((item)=> (
-                    <Card title={item.title} img={item.img} outil={item.outil}/>
+                    <Card key={item.title} title={item.title} img={item.img} outil={item.outil}/>
                 ))}
             </div>
         </section>
