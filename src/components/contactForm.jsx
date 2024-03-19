@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-export default () => {
+export default function ContactForm() {
     const [status, setStatus] = useState({
         submitted: false,
         submitting: false,
@@ -59,9 +59,7 @@ export default () => {
         });
     };
     return (
-        <main>
-        <h1>React and Formspree</h1>
-        <hr />
+        <div className='contact-form'>
         <form onSubmit={handleOnSubmit}>
             <label htmlFor="email">Email</label>
             <input
@@ -92,6 +90,6 @@ export default () => {
             <div className="error">Error: {status.info.msg}</div>
         )}
         {!status.info.error && status.info.msg && <p>{status.info.msg}</p>}
-        </main>
+        </div>
     );
 };

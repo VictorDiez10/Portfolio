@@ -4,7 +4,11 @@
 //     align-items: center;
 // }
 
-.contacter p {
+.contact-form {
     display: flex;
     justify-content: center;
+    form {
+        display: flex;
+        flex-direction: column;
+    }
 }

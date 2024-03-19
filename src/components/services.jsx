@@ -2,7 +2,7 @@ import '../styles/services.scss';
 import Card from './card';
 import logiciel from '../assets/icon/logiciel.png';
 import server from '../assets/icon/serveur.png';
-import crayon from '../assets/icon/crayon.png'
+import crayon from '../assets/icon/crayon.png';
 
 export default function Services() {
     return (

@@ -1,12 +1,12 @@
 import '../styles/contact.scss';
-import contactForm from './contactForm';
+import ContactForm from './contactForm';
 
 export default function Contact() {
     return (
         <section id="contact">
             <h2>Me Contacter</h2>
             <div className='contacter'>
-                <contactForm />
+                <ContactForm />
             </div>
         </section>
     )

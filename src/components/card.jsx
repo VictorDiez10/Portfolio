@@ -7,7 +7,9 @@ export default function card({title, img, outil}) {
             <h3 className="title">{title}</h3>
             <div className="container-img"><img src={img} alt={img} /></div>
             <div className="outils">
-                <div className="outil">{outil}</div>
+            {outil.map((item, index) => {
+        return <div key={`outil-${index}`} className="outil">{item}</div>
+    })}
             </div>
         </div>
     )
