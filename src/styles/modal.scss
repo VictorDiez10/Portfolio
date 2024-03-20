@@ -1,6 +1,8 @@
 .img-btn-modal  img {
-    width: 100px;
-    height: 100px;
+    width: 700px;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
 }
 
 body.active-modal {
@@ -8,10 +10,9 @@ body.active-modal {
 }
 
 .img-btn-modal {
-    padding: 10px 20px;
+    // padding: 10px 20px;
     display: block;
-    margin: 100px auto 0;
-    font-size: 18px;
+    margin: 110px auto 10px;
 }
 
 .modal, .overlay {

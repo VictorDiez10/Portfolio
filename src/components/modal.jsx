@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import '../styles/modal.scss'
 
-export default function modal({img, titre, outil, mission}) {
+export default function modal({img, titre, outil, mission, lien}) {
 
     const [modal, setModal] = useState(false);
 
@@ -9,10 +9,12 @@ export default function modal({img, titre, outil, mission}) {
         setModal(!modal)
     }
 
+
     return (
         <>
         <div className="img-btn-modal"
         onClick={toggleModal}
+        // onMouseLeave={z}
         >
             <img src={img} alt="#" />
         </div>
@@ -22,8 +24,8 @@ export default function modal({img, titre, outil, mission}) {
             onClick={toggleModal}
             ></div>
             <div className="modal-content">
-                <div className="modal-img">
-                    <img src={img} alt="" />
+                <div className="modal-img" >
+                    <img src={img} alt="" onClick={lien} />
                 </div>
                 <div className="modal-info">
                     <h3 className='modal-titre'>{titre}</h3>
