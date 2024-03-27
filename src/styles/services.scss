@@ -1,18 +1,15 @@
 @import './settings.scss';
 
 #services {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $fourthColor;
+    h2 {
+        text-decoration: underline 3px $fifthColor;
+    }
+}
+
+
+.services {
     margin-top: 30px;
-}
-
-
-.services p {
-    color: $primaryColor;
-    display: flex;
-    justify-content: center;
-}
-
-.border-section {
-    border-top: 3px solid $fifthColor;
-    margin-left: 40%;
-    margin-right: 40%;
 }

@@ -1,10 +1,10 @@
 import '../styles/travaux.scss';
 import Modal from './modal';
-import booki from '../assets/site/booki.png';
-import nina from '../assets/site/nina-carducci.png';
-import sophie from '../assets/site/sophie-bluel.png';
-import kasa from '../assets/site/kasa.png';
-import monvieuxgrimoire from '../assets/site/mon-vieux-grimoire.png'
+import booki from '../assets/site/booki-r.png';
+import nina from '../assets/site/nina-carducci-r.png';
+import sophie from '../assets/site/sophie-bluel-r.png';
+import kasa from '../assets/site/kasa-r.png';
+import monvieuxgrimoire from '../assets/site/mon-vieux-grimoire-r.png'
 
 export default function Travaux() {
   return (
@@ -24,7 +24,7 @@ const works = [
     image: booki,
     titre: "Booki",
     lien: "https://github.com/VictorDiez10/Projet-2-html-css",
-    mission: "",
+    mission: "Développement du front-end du site de location d’hébergements Booki.",
     outil: [
       "HTML", "CSS"
     ]

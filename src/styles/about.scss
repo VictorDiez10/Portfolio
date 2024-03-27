@@ -1,22 +1,15 @@
 @import './settings.scss';
 
 #about {
-    margin-top: 30px;
-    
+    padding-top: 30px;
     background-color: $thirdColor;
     h2 {
         display: flex;
         justify-content: center;
         font-size: 2.5em;
         margin-top: 30px;
-        text-decoration: underline $primaryColor;
+        text-decoration: 3px underline $fifthColor;
     }
-}
-
-.border-section {
-    border-top: 3px solid $fifthColor;
-    margin-left: 40%;
-    margin-right: 40%;
 }
 
 .about {

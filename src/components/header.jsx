@@ -1,4 +1,4 @@
-import PC from "../assets/logo/Logo-pc-cercle.png";
+import PC from "../assets/logo/logo-pc-cercle-couleur.png";
 import "../styles/header.scss";
 
 
@@ -10,16 +10,16 @@ export default function header() {
             <nav className="nav-links">
                 <ul>
                     <li>
-                        <a class="link" href="">À propos</a>
+                        <a className="link" href="">À propos</a>
                     </li>
                     <li>
-                        <a class="link" href="">Mes services</a>
+                        <a className="link" href="">Mes services</a>
                     </li>
                     <li>
-                        <a class="link" href="">Mes travaux</a>
+                        <a className="link" href="">Mes travaux</a>
                     </li>
                     <li>
-                        <a class="link" href="">Me contacter</a>
+                        <a className="link" href="">Me contacter</a>
                     </li>
                 </ul>
             </nav>

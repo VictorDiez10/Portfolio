@@ -1,13 +1,12 @@
 import '../styles/services.scss';
 import Card from './card';
-import logiciel from '../assets/icon/logiciel.png';
-import server from '../assets/icon/serveur.png';
-import crayon from '../assets/icon/crayon.png';
+import logiciel from '../assets/icon/logiciel-r.png';
+import server from '../assets/icon/serveur-r.png';
+import crayon from '../assets/icon/crayon-r.png';
 
 export default function Services() {
     return (
         <section id="services">
-            <div className="border-section"></div>
             <h2>Mes Services</h2>
             <div className='services'>
                 {data.map((item)=> (
@@ -23,7 +22,7 @@ const data = [
         title: "Front-end",
         img: logiciel,
         outil: [
-            "HTML", "CSS", "JS", "React"
+            "HTML", "CSS", "JavaScript", "React"
         ]
     },
     {

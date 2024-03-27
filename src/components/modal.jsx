@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import '../styles/modal.scss'
+import { Link } from 'react-router-dom';
 
 export default function modal({img, titre, outil, mission, lien}) {
 
@@ -25,22 +26,25 @@ export default function modal({img, titre, outil, mission, lien}) {
             ></div>
             <div className="modal-content">
                 <div className="modal-img" >
-                    <img src={img} alt="" onClick={lien} />
+                    <img src={img} alt="" />
                 </div>
-                <div className="modal-info">
-                    <h3 className='modal-titre'>{titre}</h3>
-                    <div className="modal-mission">{mission}</div>
-                    <div className="modal-outils">
-                        {outil.map((item, index)=> {
-                            return  <div key={`outil-${index}`} className="modal-outil">{item}</div>
-                        })}
-                        
+                <div className="modal-flex">
+                    <div className="modal-info">
+                        <h3 className='modal-titre'>{titre}</h3>
+                        <div className="modal-mission">{mission}</div>
+                            <div className="modal-outils">
+                                {outil.map((item, index)=> {
+                                    return  <div key={`outil-${index}`} className="modal-outil">{item}</div>
+                                })}
+                            </div>
                     </div>
-                </div>
+                
                 <button 
                 className="close-modal"
                 onClick={toggleModal}
                 >Close</button>
+                <a href={lien} target='_blank'>Découvrir</a>
+                </div>
             </div>
         </div>
         )}

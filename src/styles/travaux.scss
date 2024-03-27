@@ -1,10 +1,12 @@
 @import './settings.scss';
 
-// #travaux {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
+#travaux {
+    padding-top: 30px;
+    background-color: $thirdColor;
+    h2 {
+        text-decoration: underline 3px $fifthColor;
+    }
+}
 
 .travaux {
     display: grid;
