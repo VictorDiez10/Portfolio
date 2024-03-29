@@ -7,6 +7,7 @@ import Travaux from '../components/travaux'
 import Contact from '../components/contact'
 import Footer from'../components/footer'
 import "../styles/portfolio.scss"
+import "../styles/_settings.scss"
 
 export default function Portfolio() {
 
@@ -20,7 +21,7 @@ export default function Portfolio() {
                 <Travaux/>
                 <Contact/>
             </main>
-            
+            <Footer/>
         </>
     )
 }

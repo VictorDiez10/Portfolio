@@ -1,8 +1,14 @@
-// #contact {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
+@import "./_settings.scss";
+
+#contact {
+    padding: 30px 0;
+    background-color: $fourthColor;
+}
+
+
+.contacter {
+    margin-top: 30px;
+}
 
 .contact-form {
     display: flex;
@@ -10,5 +16,40 @@
     form {
         display: flex;
         flex-direction: column;
+        font-family: "Roboto";
+        width: 557px;
     }
+}
+
+label {
+    margin-bottom: 6px;
+    font-size: 1.125rem;
+}
+
+textarea {
+    height: 160px;
+}
+
+input, textarea {
+    width: 500px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 27px;
+    padding: 5px 5%;
+    font-size: 105%;
+    font-family: "Roboto";
+}
+
+button {
+    font-family: "Roboto";
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: $primaryColor;
+    color: $fourthColor;
+    font-size: 1.125rem;
+    width: 100px;
+    margin-left: auto;
 }

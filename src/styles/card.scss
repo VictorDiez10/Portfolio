@@ -1,4 +1,4 @@
-@import './settings.scss';
+@import './_settings.scss';
 
 .services {
     display: flex;
@@ -9,15 +9,21 @@
 }
 
 .card {
-    border: 3px solid $secondColor;
-    border-radius: 20px;
+    // border: 3px solid $secondColor;
+    // border-radius: 20px;
+    cursor: pointer;
     padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 246px;
     height: 340px;
-    background-color: #bdd5ea8a;
+    // background-color: #bdd5ea8a;
+    background: rgba( 87, 115, 153, 0.65 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5px );
+-webkit-backdrop-filter: blur( 5px );
+border-radius: 10px;
     h4 {
         font-family: "Roboto";
         margin-top: 10px;

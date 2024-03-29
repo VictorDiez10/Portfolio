@@ -1,0 +1,22 @@
+@import "./_settings.scss";
+
+.footer {
+    background-color: $secondColor;
+    font-family: "Roboto";
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    color: $fourthColor;
+}
+
+.point {
+    border: 1px solid $fourthColor;
+    margin: 0px 10px;
+}
+
+.mentions-legal {
+    a {
+        text-decoration: none;
+        color: $fourthColor;
+    }
+}

@@ -3,7 +3,7 @@ import Error from '../page/Error';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Portfolio from '../page/Portfolio';
 import '../styles/app.scss';
-import '../styles/settings.scss';
+import '../styles/_settings.scss';
 
 function App() {
 

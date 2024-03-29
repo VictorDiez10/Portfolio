@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import '../styles/modal.scss'
-import { Link } from 'react-router-dom';
+import croix from "../assets/icon/fermer.png"
 
 export default function modal({img, titre, outil, mission, lien}) {
 
@@ -9,6 +9,12 @@ export default function modal({img, titre, outil, mission, lien}) {
     const toggleModal = () => {
         setModal(!modal)
     }
+
+    if(modal) {
+            document.body.classList.add('active-modal')
+        } else {
+            document.body.classList.remove('active-modal')
+        }
 
 
     return (
@@ -31,19 +37,23 @@ export default function modal({img, titre, outil, mission, lien}) {
                 <div className="modal-flex">
                     <div className="modal-info">
                         <h3 className='modal-titre'>{titre}</h3>
+                        <div className="modal-mission-title">Mission: </div>
                         <div className="modal-mission">{mission}</div>
+                        <div className="modal-outils-title">Outils utilisés: </div>
                             <div className="modal-outils">
                                 {outil.map((item, index)=> {
                                     return  <div key={`outil-${index}`} className="modal-outil">{item}</div>
                                 })}
                             </div>
-                    </div>
+                    
                 
-                <button 
+                <img 
+                src={croix}
                 className="close-modal"
                 onClick={toggleModal}
-                >Close</button>
+                ></img>
                 <a href={lien} target='_blank'>Découvrir</a>
+                </div>
                 </div>
             </div>
         </div>

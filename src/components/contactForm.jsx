@@ -81,9 +81,9 @@ export default function ContactForm() {
             <button type="submit" disabled={status.submitting}>
             {!status.submitting
                 ? !status.submitted
-                ? 'Submit'
-                : 'Submitted'
-                : 'Submitting...'}
+                ? 'Envoyer'
+                : 'Soumis'
+                : 'Soumettant'}
             </button>
         </form>
         {status.info.error && (

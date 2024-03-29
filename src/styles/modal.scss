@@ -1,3 +1,5 @@
+@import "./_settings.scss";
+
 .img-btn-modal  img {
     width: 800px;
     border-radius: 20px;
@@ -37,19 +39,61 @@ body.active-modal {
     background: #f1f1f1;
     padding: 14px 28px;
     border-radius: 3px;
-    // max-width: 600px;
     min-width: 300px;
     display: flex;
 }
 
-.close-modal {
+.close-modal{
+    position: absolute;
+    top: 10px;
+    right: 10px;
     padding: 5px 7px;
 }
+
+.close-modal:hover {
+    cursor: pointer;
+} 
+
 
 .modal-img img {
     width: 500px;
 }
 
+.modal-flex {
+    margin-left: 30px;
+}
+
 .modal-info {
     font-family: "Roboto";
+    h3 {
+        font-family: "Mauline";
+        font-size: 2.5em;
+        color: $fifthColor;
+        margin-bottom: 1.125rem;
+    }
+}
+
+.modal-mission-title, .modal-outils-title{
+    font-size: 1.125rem;
+}
+
+.modal-mission {
+    margin-bottom: 1.125rem;
+}
+
+.modal-outils {
+    display: flex;
+    margin-bottom: 1.125rem;
+}
+
+.modal-outil {
+    border: 2px solid $primaryColor;
+    border-radius: 30px;
+    font-family: "Roboto";
+    font-size: 1rem;
+    color: $secondColor;
+    padding: 4px 16px;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
 }
