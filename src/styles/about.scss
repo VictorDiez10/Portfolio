@@ -1,7 +1,8 @@
 @import './_settings.scss';
 
 #about {
-    padding-top: 30px;
+    padding-top: 80px;
+    padding-bottom: 60px;
     background-color: $thirdColor;
     h2 {
         display: flex;
@@ -13,13 +14,12 @@
 }
 
 .about {
-    padding-bottom: 30px;
-p {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.25em;
-    color: $primaryColor;
-}
+    p {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.25em;
+        color: $primaryColor;
+    }
 }

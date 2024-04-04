@@ -16,15 +16,29 @@ export default function modal({img, titre, outil, mission, lien}) {
             document.body.classList.remove('active-modal')
         }
 
-
+        const [isShown, setIsShown] = useState(false);
     return (
         <>
+
         <div className="img-btn-modal"
         onClick={toggleModal}
-        // onMouseLeave={z}
-        >
-            <img src={img} alt="#" />
+        >  
+        
+            <img src={img} alt="#"
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+            />
+            {/* {isShown && ( */}
+        <div className='hover'>
+            <div className="hover-titre">{titre}</div>
+            <div className="hover-button">
+                <button className="button-modal">Voir plus</button>
+            </div>
         </div>
+        {/* )} */}
+        </div>
+         
+        
         {modal && (
             <div className="modal">
             <div className="overlay"

@@ -1,21 +1,39 @@
 @import "./_settings.scss";
 
-.img-btn-modal  img {
-    width: 800px;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    cursor: pointer;
+
+.hover {
+    position: absolute;
+    // z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.img-btn-modal {
+    // padding: 10px 20px;
+    display: block;
+    margin: 80px auto 10px;
+    position: relative;
+    z-index: 9;
+    img {
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        cursor: pointer;
+    }
+    &:hover .hover{
+        opacity: 0.9;
+        background-color: aqua;
+        cursor: pointer;
+    }
 }
 
 body.active-modal {
     overflow-y: hidden;
 }
 
-.img-btn-modal {
-    // padding: 10px 20px;
-    display: block;
-    margin: 110px auto 10px;
-}
+
 
 .modal, .overlay {
     width: 100vw;
@@ -25,6 +43,7 @@ body.active-modal {
     right: 0;
     bottom: 0;
     position: fixed;
+    z-index: 999;
 }
 
 .overlay {
@@ -38,9 +57,10 @@ body.active-modal {
     line-height: 1.4;
     background: #f1f1f1;
     padding: 14px 28px;
-    border-radius: 3px;
+    border-radius: 10px;
     min-width: 300px;
     display: flex;
+    z-index: 90000;
 }
 
 .close-modal{
@@ -54,10 +74,9 @@ body.active-modal {
     cursor: pointer;
 } 
 
-
-.modal-img img {
-    width: 500px;
-}
+// .modal-img img {
+//     width: 500px;
+// }
 
 .modal-flex {
     margin-left: 30px;

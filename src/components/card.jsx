@@ -1,28 +1,22 @@
 import React from 'react'
 import '../styles/card.scss';
-import VanillaTilt from 'vanilla-tilt';
-import { useEffect, useRef } from 'react';
+import Tilt from './tilt.jsx';
 
 export default function card({title, img, outil}) {
-
+    const options = {
+        speed: 1000,
+    };
         
     return (
-        <div className="card" data-tilt >
+        <Tilt className="card" data-tilt options={options}>
             <h3 className="title">{title}</h3>
             <div className="container-img"><img src={img} alt={img} /></div>
             <h4 className="outil-titre">Outils utilisés :</h4>
             <div className="outils">
             {outil.map((item, index) => {
-        return <div key={`outil-${index}`} className="outil">{item}</div>
+        return <img key={`outil-${index}`} className="outil" src={item} />
     })}
             </div>
-            <script type="text/javascript" src="./src/components/vanilla-tilt.min.js"></script>
-    <script>
-	{VanillaTilt.init(document.querySelectorAll(".card"), {
-		max: 25,
-		speed: 400
-	})}
-    </script>
-        </div>
+        </Tilt>
     )
 }

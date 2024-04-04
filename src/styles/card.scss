@@ -19,11 +19,13 @@
     width: 246px;
     height: 340px;
     // background-color: #bdd5ea8a;
-    background: rgba( 87, 115, 153, 0.65 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 5px );
--webkit-backdrop-filter: blur( 5px );
-border-radius: 10px;
+    // background: rgba( 87, 115, 153, 0.65 );
+    background: rgb(247,247,255);
+    background: linear-gradient(180deg, rgba(247,247,255,1) 0%, rgba(87,115,153,1) 50%);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
     h4 {
         font-family: "Roboto";
         margin-top: 10px;
@@ -41,21 +43,23 @@ border-radius: 10px;
 }
 
 .outils{
-    display: grid;
-    flex-flow: row wrap;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    // grid-template-columns: 1fr 1fr;
     margin-top: 20px;
     row-gap: 35px;
     column-gap: 20px;
     .outil {
-        border: 2px solid $primaryColor;
-        border-radius: 30px;
-        font-family: "Roboto";
-        font-size: 1rem;
-        color: $secondColor;
-        padding: 6px 4px;
+        // border: 2px solid $primaryColor;
+        // border-radius: 30px;
+        // font-family: "Roboto";
+        // font-size: 1rem;
+        // color: $secondColor;
+        // padding: 6px 4px;
         display: flex;
         justify-content: center;
+        height: 50px;
     }
 }
 

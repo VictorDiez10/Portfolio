@@ -3,6 +3,10 @@ import Card from './card';
 import logiciel from '../assets/icon/logiciel-r.png';
 import server from '../assets/icon/serveur-r.png';
 import crayon from '../assets/icon/crayon-r.png';
+import html from '../assets/icon/html.png';
+import css from '../assets/icon/cssz.png';
+import js from '../assets/icon/js.png';
+import react from '../assets/icon/React.png';
 
 export default function Services() {
 
@@ -23,7 +27,7 @@ const data = [
         title: "Front-end",
         img: logiciel,
         outil: [
-            "HTML", "CSS", "JavaScript", "React"
+            html, css, js, react
         ]
     },
     {

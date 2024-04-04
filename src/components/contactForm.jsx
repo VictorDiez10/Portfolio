@@ -89,7 +89,7 @@ export default function ContactForm() {
         {status.info.error && (
             <div className="error">Error: {status.info.msg}</div>
         )}
-        {!status.info.error && status.info.msg && <p>{status.info.msg}</p>}
+        {!status.info.error && status.info.msg && <div className="succes">{status.info.msg}</div>}
         </div>
     );
 };
