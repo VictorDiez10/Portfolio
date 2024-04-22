@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 export default function ContactForm() {
@@ -11,6 +11,8 @@ export default function ContactForm() {
         email: '',
         message: '',
     });
+    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+
     const handleServerResponse = (ok, msg) => {
         if (ok) {
         setStatus({
@@ -22,12 +24,24 @@ export default function ContactForm() {
             email: '',
             message: '',
         });
+        setShowSuccessMessage(true);
         } else {
         setStatus({
             info: { error: true, msg: msg },
         });
         }
     };
+
+    useEffect(() => {
+        let timer;
+        if (showSuccessMessage) {
+            timer = setTimeout(() => {
+                setShowSuccessMessage(false); // Cacher le message de succès après 3 secondes
+            }, 3000);
+        }
+        return () => clearTimeout(timer);
+    }, [showSuccessMessage]);
+
     const handleOnChange = (e) => {
         e.persist();
         setInputs((prev) => ({
@@ -51,7 +65,7 @@ export default function ContactForm() {
         .then((response) => {
             handleServerResponse(
             true,
-            'Thank you, your message has been submitted.',
+            'Merci, votre message à bien été reçu.',
             );
         })
         .catch((error) => {
@@ -89,7 +103,7 @@ export default function ContactForm() {
         {status.info.error && (
             <div className="error">Error: {status.info.msg}</div>
         )}
-        {!status.info.error && status.info.msg && <div className="succes">{status.info.msg}</div>}
+        {/* {!status.info.error && status.info.msg*/ showSuccessMessage && <div className="succes">{status.info.msg}</div>} 
         </div>
     );
 };

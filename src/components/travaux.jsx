@@ -33,7 +33,7 @@ const works = [
     image: sophie,
     titre: "Sophie-Bluel",
     lien: "https://github.com/VictorDiez10/Projet_3_javascript",
-    mission: "",
+    mission: "Créer une page dynamiquement en utilisant JavaScript avec une API.",
     outil: [
       "HTML", "CSS", "JS"
     ]
@@ -42,7 +42,7 @@ const works = [
     image: nina,
     titre: "Nina-Carducci",
     lien: "https://github.com/VictorDiez10/Projet_5",
-    mission: "",
+    mission: "Débuggez et optimisez un site de photographe. ",
     outil: [
       "HTML", "CSS", "JS", "JQuery"
     ]
@@ -51,7 +51,7 @@ const works = [
     image: kasa,
     titre: "Kasa",
     lien: "https://github.com/VictorDiez10/projet_6_Kasa",
-    mission: "",
+    mission: "Créez une application web de location immobilière avec React. ",
     outil: [
       "React", "SCSS",
     ]
@@ -60,7 +60,7 @@ const works = [
     image: monvieuxgrimoire,
     titre: "Mon Vieux Grimoire",
     lien: "https://github.com/VictorDiez10/p7-code",
-    mission: "",
+    mission: "Développez le back-end d'un site de notation de livres. ",
     outil: [
       "NodeJS", "Express", "MongoDB"
     ]

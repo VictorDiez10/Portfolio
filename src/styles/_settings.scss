@@ -37,3 +37,7 @@ h1, h2 {
     font-size: 2.5em;
     color: $secondColor;
 }
+
+html {
+    scroll-behavior: smooth;
+}

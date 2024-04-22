@@ -1,0 +1,14 @@
+@import './settings';
+
+.titre-error {
+    margin: 5rem 0;
+    font-size: 4rem;
+}
+
+.info-error {
+    display: flex;
+    justify-content: center;
+    color: $primaryColor;
+    font-size: 1.25rem;
+    margin: 8.89rem 0;
+}

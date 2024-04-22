@@ -20,9 +20,7 @@ export default function modal({img, titre, outil, mission, lien}) {
     return (
         <>
 
-        <div className="img-btn-modal"
-        onClick={toggleModal}
-        >  
+        <div className="img-btn-modal">  
         
             <img src={img} alt="#"
             onMouseEnter={() => setIsShown(true)}
@@ -32,7 +30,9 @@ export default function modal({img, titre, outil, mission, lien}) {
         <div className='hover'>
             <div className="hover-titre">{titre}</div>
             <div className="hover-button">
-                <button className="button-modal">Voir plus</button>
+                <button className="button-modal"
+                onClick={toggleModal}
+                >Voir plus</button>
             </div>
         </div>
         {/* )} */}

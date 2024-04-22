@@ -21,6 +21,7 @@
         flex-direction: column;
         font-family: "Roboto";
         width: 557px;
+        padding: 0 10px;
     }
 }
 
@@ -31,10 +32,11 @@ label {
 
 textarea {
     height: 160px;
+    resize: none;
 }
 
 input, textarea {
-    width: 500px;
+    width: 89%;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 27px;

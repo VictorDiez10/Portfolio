@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Portfolio from '../page/Portfolio';
 import '../styles/app.scss';
 import '../styles/_settings.scss';
+import '../styles/responsive.scss';
 
 function App() {
 
