@@ -2,23 +2,16 @@
     display: none;
 }
 
-@media (max-width: 1366px) {
-    .img-btn-modal {
-        width: 600px;
+@media (max-width: 1700px) {
+    .img-btn-modal{
+        width: 90%;
         img {
-            width: 600px;
+            max-width: 100%;
+            min-width: 100%;
         }
     }
 }
 
-@media (max-width: 1228px) {
-    .img-btn-modal {
-        width: 450px;
-        img {
-            width: 450px;
-        }
-    }
-}
 
 @media (max-width: 1076px) {
     .card {

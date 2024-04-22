@@ -6,14 +6,19 @@
     align-items: center;
     color: $thirdColor;
     height: 844px;
-    // background-image: url("../assets/images/grand-min.jpg");
+    background-image: url("../assets/images/grand-min.jpg");
     background-size: cover;
 
-    picture {
-        img {
-            
-        }
-    }
+    
+            // picture {
+    //     position: absolute;
+    //     min-width: 100%;
+    //     min-height: 100%;
+    //     top: 50%;
+    //     left: 50%;
+    //     z-index: -100;
+    //     transform: translate(-50%, -50%);
+    // }
     h1 {
         font-weight: 500;
         font-size: 2.5em;

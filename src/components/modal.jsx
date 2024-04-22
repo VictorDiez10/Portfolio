@@ -61,11 +61,11 @@ export default function modal({img, titre, outil, mission, lien}) {
                             </div>
                     
                 
-                <img 
-                src={croix}
+                <div 
+                
                 className="close-modal"
                 onClick={toggleModal}
-                ></img>
+                >×</div>
                 <a href={lien} target='_blank'>Découvrir</a>
                 </div>
                 </div>
