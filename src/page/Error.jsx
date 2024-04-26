@@ -10,6 +10,7 @@ export default function Error() {
     <Header/>
     <div className="erreur">
         <h2 className="titre-error">Erreur</h2>
+        <div className="info-error">Désolé cette page n'existe pas</div>
         <Link className="info-error" to="/">Veuillez revenir sur la page d'acceuil</Link>
     </div>
     <Footer/>

@@ -3,15 +3,15 @@ import Card from './card';
 import logiciel from '../assets/icon/n-pc.png';
 import server from '../assets/icon/n-serveur.png';
 import crayon from '../assets/icon/crayon-r.png';
-import html from '../assets/icon/html.png';
+import html from '../assets/icon/htmlt.png';
 import css from '../assets/icon/cssz.png';
 import js from '../assets/icon/js.png';
 import react from '../assets/icon/React.png';
-import express from '../assets/icon/express.png';
-import mongodb from '../assets/icon/mongodb.jpg';
-import node from '../assets/icon/node-js.jpg';
+import express from '../assets/icon/expressnt.png';
+import mongodb from '../assets/icon/mongodbt.png';
+import node from '../assets/icon/node-js.png';
 import gimp from '../assets/icon/gimp.png';
-import figma from '../assets/icon/figma.png';
+import figma from '../assets/icon/Figma-logo.png';
 
 export default function Services() {
 

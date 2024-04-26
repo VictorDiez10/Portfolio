@@ -41,3 +41,19 @@ h1, h2 {
 html {
     scroll-behavior: smooth;
 }
+
+.mentions {
+    display: flex;
+    justify-content: center;
+    margin-left: 6%;
+    margin-bottom: 279px;
+    p{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-family: "Roboto";
+    }
+    h2 {
+        justify-content: start;
+        line-height: 4rem;
+    }
+}

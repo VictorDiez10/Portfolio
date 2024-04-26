@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import '../styles/modal.scss'
-import croix from "../assets/icon/fermer.png"
 
 export default function modal({img, titre, outil, mission, lien}) {
 
@@ -16,28 +15,23 @@ export default function modal({img, titre, outil, mission, lien}) {
             document.body.classList.remove('active-modal')
         }
 
-        const [isShown, setIsShown] = useState(false);
     return (
         <>
 
         <div className="img-btn-modal">  
         
             <img src={img} alt="#"
-            onMouseEnter={() => setIsShown(true)}
-            onMouseLeave={() => setIsShown(false)}
             />
-            {/* {isShown && ( */}
+            
         <div className='hover'>
             <div className="hover-titre">{titre}</div>
             <div className="hover-button">
                 <button className="button-modal"
                 onClick={toggleModal}
-                >Voir plus</button>
+                >En Savoir Plus</button>
             </div>
         </div>
-        {/* )} */}
         </div>
-         
         
         {modal && (
             <div className="modal">

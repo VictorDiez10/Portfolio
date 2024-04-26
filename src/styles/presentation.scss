@@ -1,15 +1,20 @@
 @import "./_settings.scss";
 
 .main-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     color: $thirdColor;
-    height: 844px;
-    background-image: url("../assets/images/grand-min.jpg");
-    background-size: cover;
+    height: 100vh;
+    // background-image: url("../assets/images/grand-min.jpg");
+    // background-size: cover;
+    position: relative;
 
-    
+    img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
             // picture {
     //     position: absolute;
     //     min-width: 100%;
@@ -23,5 +28,8 @@
         font-weight: 500;
         font-size: 2.5em;
         color: $thirdColor;
+        position: absolute;
+        top: 50%;
+        left: 34%;
     }
 }

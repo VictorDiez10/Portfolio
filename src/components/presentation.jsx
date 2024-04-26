@@ -1,13 +1,13 @@
 import '../styles/presentation.scss'
-import original from '../assets/images/original.jpg'
+import original from '../assets/images/grand.jpg'
 
 export default function presentation() {
   return (
     <div className='main-content'>
-        {/* <picture>
+        <picture>
           <source media="" srcset={original}/>
           <img src={original} alt="#" />
-        </picture> */}
+        </picture>
           <h1>Bonjour je suis Victor developeur Front-end</h1>
     </div>
   )

@@ -28,22 +28,37 @@
         opacity: 0.9;
         background-color: $secondColor ;
         border-radius: 20px;
-        cursor: pointer;
+        // cursor: pointer;
         // display: flex;
         // justify-content: center;
         // align-items: center;
         .hover-titre {
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 85%;
+            align-items: flex-end;
+            height: 50%;
             font-family: "Roboto";
+            color: $fourthColor;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
         }
         .hover-button {
             display: flex;
-            margin-right: 3%;
+            justify-content: center;
         }
-        
+        .button-modal {
+            display: flex;
+            justify-content: center;
+            font-family: "Roboto";
+            border: none;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 8px 13px;
+            border-radius: 20px;
+            background-color: $primaryColor;
+            color: $fourthColor;
+            font-size: 1.125rem;
+        }
     }
 }
 
@@ -76,7 +91,7 @@ body.active-modal {
     background: #f1f1f1;
     padding: 14px 28px;
     border-radius: 10px;
-    min-width: 300px;
+    min-width: 75%;
     display: flex;
     z-index: 90000;
 }
@@ -91,11 +106,12 @@ body.active-modal {
 
 .close-modal:hover {
     cursor: pointer;
-} 
+}
 
-// .modal-img img {
-//     width: 500px;
-// }
+.modal-img img {
+    width: 97%;
+
+}
 
 .modal-flex {
     margin-left: 30px;

@@ -1,41 +1,43 @@
 import React from 'react'
 import Header from '.././components/header';
 import Footer from '.././components/footer';
+import '../styles/_settings.scss';
 
 export default function MentionsLegales() {
     return (
         <>
         <Header/>
-        <main>
-        MENTIONS LÉGALES
+        <main className='mentions'>
+            <div className="legales">
+        <h2>MENTIONS LEGALES</h2>
 
-Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, il est précisé aux utilisateurs du site Victor Diez l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.
+<p>Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, il est précisé aux utilisateurs du site Victor Diez l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.</p>
 
-Edition du site 
+<h2>Edition du site</h2> 
 
-Le présent site, accessible à l’URL portfolio-theta-gray-79.vercel.app (le « Site »), est édité par :
+<p>Le présent site, accessible à l’URL portfolio-theta-gray-79.vercel.app (le « Site »), est édité par :
 
-Victor Diez, résidant 77 rue de gentilly 94800 VILLEJUIF, de nationalité Française (France), né(e) le 12/04/2003, 
+Victor Diez, de nationalité Française (France), né(e) le 12/04/2003,</p> 
 
 
-Hébergement
+<h2>Hebergement</h2>
 
-Le Site est hébergé par la société Vercel, situé Vercel Inc. 440 N Barranca Ave #4133 Covina, CA 91723, (contact téléphonique ou email : +33123456789).
+<p>Le Site est hébergé par la société Vercel, situé Vercel Inc. 440 N Barranca Ave #4133 Covina, CA 91723.</p>
 
-Directeur de publication 
+<h2>Directeur de publication</h2> 
 
-Le Directeur de la publication du Site est Victor Diez.
+<p>Le Directeur de la publication du Site est Victor Diez.</p>
 
-Nous contacter 
+<h2>Nous contacter</h2> 
 
-Par téléphone : +33672062685
+<p>
 Par email : victordiez1@gmail.com
-Par courrier : 77 rue de gentilly 94800 VILLEJUIF
+</p>
 
-Génération des mentions légales par Legalstart.
+<h2>Generation des mentions legales par Legalstart.</h2>
 
 
-
+</div>
         </main>
         <Footer/>
         </>
