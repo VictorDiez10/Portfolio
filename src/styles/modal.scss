@@ -141,6 +141,7 @@ body.active-modal {
 
 .modal-outils {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 1.125rem;
 }
 
@@ -154,4 +155,5 @@ body.active-modal {
     display: flex;
     justify-content: center;
     margin-right: 10px;
+    margin-bottom: 10px;
 }

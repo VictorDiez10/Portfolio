@@ -65,5 +65,24 @@ input, textarea {
 
 .succes {
     position: absolute;
-    border: 5px solid red;
+    border: 5px solid green;
+    right: 77%;
+    bottom: -630%;
+    color: $fourthColor;
+    background-color: green;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    font-family: "Roboto";
+}
+
+.error {
+    position: absolute;
+    border: 5px solid $fifthColor;
+    right: 77%;
+    bottom: -630%;
+    color: $fourthColor;
+    background-color: $fifthColor;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    font-family: "Roboto";
 }

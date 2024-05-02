@@ -30,6 +30,10 @@
         color: $thirdColor;
         position: absolute;
         top: 50%;
-        left: 34%;
+        text-align: center;
+    }
+    .titre-p {
+        display: flex;
+        justify-content: center;
     }
 }
